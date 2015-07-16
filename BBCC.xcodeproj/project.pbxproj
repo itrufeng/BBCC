@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57DCDA795229B84FB5408430 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2044C1F2ECF7E9A8507031D0 /* libPods.a */; };
+		74518C351B56935800A49329 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74518C341B56935800A49329 /* EditViewController.m */; };
 		74735B1F1B557FCF009FBC70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74735B1E1B557FCF009FBC70 /* main.m */; };
 		74735B221B557FCF009FBC70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74735B211B557FCF009FBC70 /* AppDelegate.m */; };
 		74735B251B557FCF009FBC70 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74735B241B557FCF009FBC70 /* ViewController.m */; };
 		74735B281B557FCF009FBC70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74735B261B557FCF009FBC70 /* Main.storyboard */; };
 		74735B2A1B557FCF009FBC70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74735B291B557FCF009FBC70 /* Assets.xcassets */; };
 		74735B2D1B557FCF009FBC70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74735B2B1B557FCF009FBC70 /* LaunchScreen.storyboard */; };
+		74735B361B557FE7009FBC70 /* BeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 74735B351B557FE7009FBC70 /* BeaconManager.m */; };
+		74735B381B558037009FBC70 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74735B371B558037009FBC70 /* CoreLocation.framework */; };
+		74735B3B1B558943009FBC70 /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 74735B3A1B558943009FBC70 /* Request.m */; };
+		747423E21B56AE720006E3F1 /* Check.m in Sources */ = {isa = PBXBuildFile; fileRef = 747423E11B56AE720006E3F1 /* Check.m */; };
+		747423E41B56AFFD0006E3F1 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 747423E31B56AFFD0006E3F1 /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2044C1F2ECF7E9A8507031D0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DC7C3E03887A6A9BB201084 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		74518C331B56935800A49329 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		74518C341B56935800A49329 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 		74735B1A1B557FCF009FBC70 /* BBCC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BBCC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74735B1E1B557FCF009FBC70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		74735B201B557FCF009FBC70 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +37,15 @@
 		74735B291B557FCF009FBC70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74735B2C1B557FCF009FBC70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74735B2E1B557FCF009FBC70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74735B341B557FE7009FBC70 /* BeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconManager.h; sourceTree = "<group>"; };
+		74735B351B557FE7009FBC70 /* BeaconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconManager.m; sourceTree = "<group>"; };
+		74735B371B558037009FBC70 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		74735B391B558943009FBC70 /* Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
+		74735B3A1B558943009FBC70 /* Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Request.m; sourceTree = "<group>"; };
+		747423E01B56AE720006E3F1 /* Check.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Check.h; sourceTree = "<group>"; };
+		747423E11B56AE720006E3F1 /* Check.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Check.m; sourceTree = "<group>"; };
+		747423E31B56AFFD0006E3F1 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		BC4608CD6E173044B9A6B11A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +53,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				747423E41B56AFFD0006E3F1 /* CoreBluetooth.framework in Frameworks */,
+				74735B381B558037009FBC70 /* CoreLocation.framework in Frameworks */,
+				57DCDA795229B84FB5408430 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1073893E1C1272ACF6D02D44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				747423E31B56AFFD0006E3F1 /* CoreBluetooth.framework */,
+				2044C1F2ECF7E9A8507031D0 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		74735B111B557FCF009FBC70 = {
 			isa = PBXGroup;
 			children = (
+				74735B371B558037009FBC70 /* CoreLocation.framework */,
 				74735B1C1B557FCF009FBC70 /* BBCC */,
 				74735B1B1B557FCF009FBC70 /* Products */,
+				FE66325EFC585C15D5DB4490 /* Pods */,
+				1073893E1C1272ACF6D02D44 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +102,14 @@
 				74735B2B1B557FCF009FBC70 /* LaunchScreen.storyboard */,
 				74735B2E1B557FCF009FBC70 /* Info.plist */,
 				74735B1D1B557FCF009FBC70 /* Supporting Files */,
+				74735B341B557FE7009FBC70 /* BeaconManager.h */,
+				74735B351B557FE7009FBC70 /* BeaconManager.m */,
+				74735B391B558943009FBC70 /* Request.h */,
+				74735B3A1B558943009FBC70 /* Request.m */,
+				74518C331B56935800A49329 /* EditViewController.h */,
+				74518C341B56935800A49329 /* EditViewController.m */,
+				747423E01B56AE720006E3F1 /* Check.h */,
+				747423E11B56AE720006E3F1 /* Check.m */,
 			);
 			path = BBCC;
 			sourceTree = "<group>";
@@ -79,6 +122,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FE66325EFC585C15D5DB4490 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DC7C3E03887A6A9BB201084 /* Pods.debug.xcconfig */,
+				BC4608CD6E173044B9A6B11A /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +138,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74735B311B557FCF009FBC70 /* Build configuration list for PBXNativeTarget "BBCC" */;
 			buildPhases = (
+				F5F48196A9DE88E87E45190B /* Check Pods Manifest.lock */,
 				74735B161B557FCF009FBC70 /* Sources */,
 				74735B171B557FCF009FBC70 /* Frameworks */,
 				74735B181B557FCF009FBC70 /* Resources */,
+				F3BCE46FE8EB8580742350DB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -110,6 +164,11 @@
 				TargetAttributes = {
 					74735B191B557FCF009FBC70 = {
 						CreatedOnToolsVersion = 7.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -144,13 +203,50 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F3BCE46FE8EB8580742350DB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5F48196A9DE88E87E45190B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		74735B161B557FCF009FBC70 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				74735B251B557FCF009FBC70 /* ViewController.m in Sources */,
+				74735B3B1B558943009FBC70 /* Request.m in Sources */,
+				747423E21B56AE720006E3F1 /* Check.m in Sources */,
+				74735B361B557FE7009FBC70 /* BeaconManager.m in Sources */,
 				74735B221B557FCF009FBC70 /* AppDelegate.m in Sources */,
+				74518C351B56935800A49329 /* EditViewController.m in Sources */,
 				74735B1F1B557FCF009FBC70 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,9 +355,11 @@
 		};
 		74735B321B557FCF009FBC70 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DC7C3E03887A6A9BB201084 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BBCC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtworks.jianzhang.BBCC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -270,9 +368,11 @@
 		};
 		74735B331B557FCF009FBC70 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC4608CD6E173044B9A6B11A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BBCC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtworks.jianzhang.BBCC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -298,6 +398,7 @@
 				74735B331B557FCF009FBC70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

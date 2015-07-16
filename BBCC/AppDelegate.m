@@ -7,8 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "Check.h"
 
 @interface AppDelegate ()
+
+@property (strong, nonatomic) Check *check;
 
 @end
 
@@ -16,7 +19,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [self initData];
+    [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert categories:nil]];
+    _check = [[Check alloc] init];
+    [_check check];
     return YES;
 }
 
@@ -40,6 +46,31 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void) application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"COME" object:nil userInfo:notification.userInfo];
+}
+
+- (void)application:(UIApplication *)application handleActionWithIdentifier:(NSString *)identifier forLocalNotification:(UILocalNotification *)notification completionHandler:(void(^)())completionHandler {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"COME" object:nil userInfo:notification.userInfo];
+    completionHandler();
+}
+
+- (void)initData {
+    if ([[NSUserDefaults standardUserDefaults] stringForKey:@"HOST"] == nil) {
+        [[NSUserDefaults standardUserDefaults] setObject:@"10.117.100.133:3000" forKey:@"HOST"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+}
+
+- (NSString *)host {
+    return [[NSUserDefaults standardUserDefaults] stringForKey:@"HOST"];
+}
+
+- (void)saveHost:(NSString *)host {
+    [[NSUserDefaults standardUserDefaults] setObject:host forKey:@"HOST"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 @end

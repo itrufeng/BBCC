@@ -12,6 +12,9 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+- (NSString *)host;
+
+- (void)saveHost:(NSString *)host;
 
 @end
 
