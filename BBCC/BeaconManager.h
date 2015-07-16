@@ -15,8 +15,8 @@ typedef void(^LostBeacon)(NSString *uuid);
 @interface BeaconManager : NSObject
 
 @property (strong, nonatomic) CLLocationManager *clManager;
-@property (assign, nonatomic) FindBeacon findBeacon;
-@property (assign, nonatomic) LostBeacon lostBeacon;
+@property (strong, nonatomic) FindBeacon findBeacon;
+@property (strong, nonatomic) LostBeacon lostBeacon;
 
 - (void)registerBeaconRegionWithUUID:(NSString *)uuid major:(UInt16)major minor:(UInt16)minor;
 
